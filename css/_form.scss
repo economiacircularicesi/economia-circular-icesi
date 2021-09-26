@@ -1,0 +1,47 @@
+.form {
+    display: flex;
+    flex-direction: row;
+    &__index {
+        width: 30%;
+        margin-right: 20px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    &__questions {
+        margin-left: 20px;
+        height: 600px;
+        width: 70%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    &--main {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    &__nextbutton {
+        background-color: #449BD5;
+        margin-left: 630px;
+        margin-top: 545px;
+        &:hover {
+            background-color: #3986b9;
+        }
+    }
+    &__button {
+        background-color: lightgray;
+        width: 100%;
+        margin-top: 15px;
+        height: 30px;
+        color: #5E5E60;
+        font-weight: bold;
+        font-size: 16px;
+        &--fixed {
+            width: 100px;
+            margin-left: 15px;
+        }
+        &:hover {
+            background-color: rgb(189, 187, 187);
+        }
+    }
+}

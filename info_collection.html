@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economía Circular Icesi</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__leftitem">
+            <img class="header__sectionlogo" src="images/tools_logo.png">
+        </div>
+        <div class="header__rightitem">
+            <a id="logout" class="header__link">Log out</a>
+            <img class="header__userlogo" src="images/user_icon.png">
+        </div>
+    </header>
+    <main class="main form--main">
+        <p class="text--megatitle"><strong>01 </strong>Recolección de la información</p>
+        <section class="form">
+            <article class="form__index">
+
+            </article>
+            <article class="form__questions">
+                <button class="button button--red button__delete form__nextbutton">Siguiente</button>
+            </article>
+
+        </section>
+
+
+    </main>
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="footer-col ">
+                    <img class="footer__logo" src="images/logo_icesi.png " id="logoIcesi ">
+                </div>
+                <div class="footer-col ">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li class="footer_data "><a href="https://www.icesi.edu.co/es/ ">Universidad Icesi</a></li>
+                        <li class="footer_data ">Calle 18 No. 122-135 Pance, Cali - Colombia</li>
+                        <li class="footer_data ">Teléfono: +57 (2) 555 2334</li>
+                    </ul>
+                </div>
+                <div class="footer-col ">
+                    <h4>Creado por</h4>
+                    <ul>
+                        <li class="footer_data ">Katherine Ortegon Mosquera PhD </li>
+                        <li class="footer_data "><em class="email ">kortegon@icesi.edu.co</em></li>
+                        <li class="footer_data ">Maria Del Pilar Acosta Collazos PhD</li>
+                        <li class="footer_data "><em class="email ">mdacosta@icesi.edu.co</em></li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyADSAber7xTHyD99G7Z1hlOpxJNKris1lM",
+        authDomain: "economia-circular-icesi.firebaseapp.com",
+        databaseURL: "https://economia-circular-icesi-default-rtdb.firebaseio.com",
+        projectId: "economia-circular-icesi",
+        storageBucket: "economia-circular-icesi.appspot.com",
+        messagingSenderId: "1060392061768",
+        appId: "1:1060392061768:web:7515a7dc4fecc5dd02c17d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/info_collection.js"></script>

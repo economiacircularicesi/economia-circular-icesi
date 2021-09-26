@@ -1,0 +1,104 @@
+:root {
+    --questionary-color: #ECC65E;
+}
+
+.bigNumber {
+    position: absolute;
+    left: 0;
+    top: 110px;
+    color: var(--questionary-color);
+    font-size: 500px;
+    opacity: 0.2;
+    line-height: 370px;
+    margin: 0;
+}
+
+.questionary {
+    background-color: #f0f2f5;
+    min-height: 500px;
+    flex-direction: column;
+    &__button {
+        position: absolute;
+        left: 110px;
+        top: 100px;
+    }
+    &__counters {
+        margin-left: 110px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+}
+
+.card {
+    &__questionary {
+        flex-direction: row;
+        height: 250px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-left: 110px;
+        margin-right: 110px;
+        border-radius: 15px;
+        padding: 40px;
+        &__bottomMark {
+            width: 250px;
+            height: 25px;
+            background-color: var(--questionary-color);
+            position: absolute;
+            bottom: -25px;
+            right: 40px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+    &__qHeader {
+        width: 35%;
+    }
+    &__qTitle {
+        color: var(--questionary-color);
+        font-size: 60px;
+        font-weight: bolder;
+    }
+    &__qSubtitle {
+        font-size: 20px;
+    }
+    &__qText {
+        width: 65%;
+        color: #5E5E60;
+        font-weight: 300;
+    }
+    &__qForm {
+        margin-top: 40px;
+    }
+}
+
+.qSep {
+    width: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+    background-color: lightgray;
+}
+
+.nav {
+    position: absolute;
+    width: 0;
+    height: 0;
+    &__right {
+        right: -35px;
+        height: 30px;
+        width: 20px;
+    }
+    &__left {
+        left: -35px;
+        height: 30px;
+        width: 20px;
+    }
+}
+
+.containerQtns {
+    height: auto;
+}
+
+.popups1 {
+    width: auto;
+}

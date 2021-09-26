@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__leftitem">
+            <img class="header__sectionlogo" src="images/tools_logo.png">
+        </div>
+
+        <div class="header__rightitem">
+            <p class="header__user loggedUser"></p>
+            <a id="logout" class="header__link">Log out</a>
+            <img class="header__userlogo" src="images/user_icon.png">
+        </div>
+    </header>
+    <div class="results__container">
+
+    </div>
+
+    <a href="./admin.html">
+        <button class="button form__button form__button--fixed">Volver</button>
+    </a>
+</body>
+
+</html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyADSAber7xTHyD99G7Z1hlOpxJNKris1lM",
+        authDomain: "economia-circular-icesi.firebaseapp.com",
+        databaseURL: "https://economia-circular-icesi-default-rtdb.firebaseio.com",
+        projectId: "economia-circular-icesi",
+        storageBucket: "economia-circular-icesi.appspot.com",
+        messagingSenderId: "1060392061768",
+        appId: "1:1060392061768:web:7515a7dc4fecc5dd02c17d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="./js/utils/auth.js "></script>
+<script src="./js/utils/general.js"></script>
+<script src="./js/utils/filters.js"></script>
+<script src="./js/results.js"></script>

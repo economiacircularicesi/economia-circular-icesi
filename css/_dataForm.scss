@@ -1,0 +1,413 @@
+.popup {
+    border-radius: 5px;
+    background-color: #eff7ff;
+    box-shadow: 0px 0px 7px rgb(230, 230, 230);
+    width: 250px;
+    position: absolute;
+    height: auto;
+    top: 35px;
+    &__button {
+        background-color: transparent;
+        height: 15px;
+        width: 15px;
+        border: none;
+        font-size: 12px;
+        margin-left: auto;
+        color: grey;
+        margin-right: 10px;
+        margin-bottom: auto;
+        top: 10px;
+        display: flex;
+        flex-direction: column;
+        &--r {
+            margin-right: 0;
+        }
+    }
+    &__text {
+        margin: 0;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+}
+
+.dataform {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px rgb(230, 230, 230);
+    font-family: $font-stack;
+    font-size: 13px;
+    &__column {
+        display: flex;
+        flex-direction: row;
+    }
+    &__clearBtn {
+        height: 35px;
+    }
+    &__activity {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    &__assQstn {
+        &--statment {
+            margin-left: 20px;
+        }
+        &--options {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+        &--row {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    &__innerRow {
+        display: flex;
+        flex-direction: row;
+    }
+    &__icons {
+        position: relative;
+    }
+    &__copyBtn {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+        align-self: flex-start;
+        margin-top: 15px;
+    }
+    &__typeContainer {
+        display: flex;
+        flex-direction: row;
+        &--option {
+            width: 50%;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        &--right {
+            margin-left: 10px;
+        }
+    }
+    &__questionsContainer {
+        &--pbottom {
+            padding-bottom: 20px;
+        }
+    }
+    &__question {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        padding: 15px;
+        padding-bottom: 0px;
+        &--son {
+            padding-left: 60px;
+        }
+        &__id {
+            margin-left: 5px;
+        }
+        &--id {
+            font-size: x-small;
+            font-weight: bold;
+            margin-top: 0px;
+            margin-top: -10px;
+        }
+        &__row {
+            display: flex;
+        }
+        &__deleteBtn {
+            background-color: lightgray;
+            margin-top: 10px;
+            border: 0;
+            outline: none;
+            border-radius: 5px;
+            color: white;
+            width: 120px;
+            &--confirm {
+                width: auto;
+                background-color: $light-red;
+                font-weight: bold;
+                &:hover {
+                    background-color: $red !important
+                }
+            }
+            &:hover {
+                background-color: $light-red;
+            }
+        }
+        &__editBtn {
+            &:hover {
+                background-color: rgb(165, 235, 165) !important
+            }
+        }
+    }
+    &__label {
+        color: rgb(128, 169, 211);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+    &__text {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    &__activities {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    &__error {
+        color: #DE4F38;
+        margin-left: 20px;
+        margin-top: 0px;
+        &--assQstn {
+            margin-left: 0px;
+        }
+    }
+    &__button {
+        width: 180px;
+        height: 30px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    &__title {
+        color: grey;
+        font-size: 40px;
+        margin-top: 0px;
+        align-self: flex-start;
+        margin-bottom: 40px;
+    }
+    &--main {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        padding-bottom: 100px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+    }
+    &__questions {
+        margin-right: 15px;
+        height: auto;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__edit {
+        width: 40%;
+        margin-left: 15px;
+        height: auto;
+        margin-top: -100px;
+        &--editQstn {
+            margin-top: 0px;
+            width: 70%;
+        }
+    }
+    &__select {
+        padding-left: 15px;
+        border: 0px;
+        height: 40px;
+        width: 50%;
+        font-weight: bold;
+        user-select: none;
+        outline: 0px;
+        &--inner {
+            background-color: rgb(229, 238, 246);
+            border-radius: 5px;
+            width: 200px;
+            border: none;
+            font-size: 13px;
+            height: 35px;
+            color: rgb(128, 169, 211);
+            padding-left: 15px;
+            padding-right: 15px;
+            outline: none;
+        }
+    }
+    &__aactivities {
+        width: 40%;
+        margin-top: 10px;
+        height: 40px;
+        line-height: 40px;
+    }
+    &__preview {
+        width: 100%;
+        margin-top: 15px;
+        height: auto;
+        position: relative;
+    }
+    &__subtitlecard {
+        height: 40px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+        width: 250px;
+    }
+    &__form {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+        padding-top: 20px;
+    }
+    &__row {
+        display: flex;
+        flex-direction: row;
+        font-size: 13px;
+        justify-content: space-between;
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &--top {
+            padding-top: 20px;
+        }
+        &--text {
+            line-height: 35px;
+        }
+        &--column {
+            display: flex;
+            flex-direction: column;
+        }
+        &--radiobutton {
+            padding: 0;
+            margin-top: 8px;
+            margin-left: 15px;
+            margin-right: auto;
+        }
+        &--buttom {
+            margin-bottom: 20px;
+        }
+    }
+    &__textarea {
+        color: rgb(128, 169, 211);
+        background-color: rgb(229, 238, 246);
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-family: $font-stack;
+        padding: 20px;
+        height: 140px;
+        margin-bottom: 5px;
+        &--question {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    &__option {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 40px;
+        &--select {
+            width: 90px;
+            margin-left: 10px;
+            color: rgb(128, 169, 211);
+            border: solid 1px #0f202c;
+            border-radius: 3px;
+            height: 25px;
+            outline: none;
+            font-size: 12px;
+        }
+        &--input {
+            width: 100%;
+            margin-left: 17px;
+            &--t {
+                margin-left: 8px;
+            }
+        }
+        &--button {
+            width: 13px;
+            height: 13px;
+            background-color: #DE4F38;
+            border: none;
+            color: white;
+            margin-left: 15px;
+            border-radius: 3px;
+            font-size: 7px;
+            padding: 0;
+            font-weight: bold;
+            display: table-cell;
+            vertical-align: middle;
+            &:hover {
+                background-color: #c2432f;
+            }
+        }
+        &--add {
+            background-color: #449BD5;
+            height: 20px;
+            border: 0px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 14px;
+            &:hover {
+                background-color: #3986b9;
+            }
+        }
+    }
+    &__input {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        width: 70%;
+    }
+}
+
+.pressed {
+    opacity: 0.5;
+    &:hover {
+        background-color: #449BD5;
+    }
+}
+
+.optionscontainer {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.id {
+    margin-top: 0px;
+}
+
+.id2 {
+    margin-top: 0px;
+}
+
+.editBtn {
+    text-align: center;
+    height: 17px;
+}
+
+.checkLeftSpace {
+    margin-left: 5px;
+}
+
+.option_hint {
+    margin-left: 5px;
+    width: 40%;
+}
+
+.option_content {
+    margin-left: 5px;
+    width: 60%;
+}
+
+.option {
+    &__hint {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.popups {
+    z-index: 100;
+}
+
+.optionCheck {
+    display: inline-block;
+}

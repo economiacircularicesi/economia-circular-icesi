@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Herramienta</title>
+</head>
+
+<body>
+
+    <div class="reset">
+        <div class="loading__container">
+            <div class="loading">
+
+            </div>
+        </div>
+
+    </div>
+    <header class="header">
+        <div class="header__leftitem">
+            <img class="header__sectionlogo" src="images/tools_logo.png">
+        </div>
+        <div class="header__rightitem">
+            <p class="header__user loggedUser"></p>
+            <a id="logout" class="header__link">Log out</a>
+            <img class="header__userlogo" src="images/user_icon.png">
+        </div>
+    </header>
+    <main class="questionary">
+        <h1 class="bigNumber">
+            1
+        </h1>
+        <a href="./tool-menu.html">
+            <button class="button form__button form__button--fixed questionary__button">Volver</button>
+        </a>
+        <section class="card card__questionary">
+            <div class="card__questionary__bottomMark">
+
+            </div>
+            <img src='./images/right__arrow.png' class="nav nav__right advButton">
+
+            </img>
+            <img src='./images/left__arrow.png' class="nav  nav__left rdeButton">
+
+            </img>
+            <div class="card__qHeader">
+                <div class="card__qTitle">
+                    A1
+                </div>
+                <div class="card__qSubtitle">
+                    Mantener el equilibrio ecosistémico en las zonas de operación de la organización.
+                </div>
+            </div>
+            <div class="qSep">
+
+            </div>
+            <div class="card__qText">
+                Impulsar la inversión, investigación y el desarrollo en tecnologías innovadoras en cada una de los principios de economía circular. (EJ. generar nuevos productos, diseños, procesos, servicios, métodos u organizaciones, utilizar los macrodatos -big data-,
+                la automatización, sistemas remotos de monitoreo)
+            </div>
+        </section>
+
+        <section class="card card__questionary card__qForm containerQtns">
+
+        </section>
+        <button class="button button__questionary pressed submitQuestionary">Finalizar</button>
+        <div class="text questionary__counters questionaryCounters">
+            Preguntas sin contestar: 76 Justificaciones restantes: 8
+        </div>
+
+
+
+
+    </main>
+</body>
+<footer class=" footer ">
+    <div class="container ">
+        <div class="row ">
+            <div class="footer-col ">
+                <img class="footer__logo " src="images/logo_icesi.png " id="logoIcesi ">
+            </div>
+            <div class="footer-col ">
+                <h4>Contacto</h4>
+                <ul>
+                    <li class="footer_data "><a href="https://www.icesi.edu.co/es/ ">Universidad Icesi</a></li>
+                    <li class="footer_data ">Calle 18 No. 122-135 Pance, Cali - Colombia</li>
+                    <li class="footer_data ">Teléfono: +57 (2) 555 2334</li>
+                </ul>
+            </div>
+            <div class="footer-col ">
+                <h4>Creado por</h4>
+                <ul>
+                    <li class="footer_data ">Katherine Ortegon Mosquera PhD </li>
+                    <li class="footer_data "><em class="email ">kortegon@icesi.edu.co</em></li>
+                    <li class="footer_data ">Maria Del Pilar Acosta Collazos PhD</li>
+                    <li class="footer_data "><em class="email ">mdacosta@icesi.edu.co</em></li>
+                </ul>
+            </div>
+        </div>
+</footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyADSAber7xTHyD99G7Z1hlOpxJNKris1lM",
+        authDomain: "economia-circular-icesi.firebaseapp.com",
+        databaseURL: "https://economia-circular-icesi-default-rtdb.firebaseio.com",
+        projectId: "economia-circular-icesi",
+        storageBucket: "economia-circular-icesi.appspot.com",
+        messagingSenderId: "1060392061768",
+        appId: "1:1060392061768:web:7515a7dc4fecc5dd02c17d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="./js/utils/auth.js "></script>
+<script src="./js/utils/filters.js"></script>
+<script src="./js/questionary.js"></script>
+
+
+</html>

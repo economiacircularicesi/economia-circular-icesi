@@ -1,0 +1,39 @@
+.matrix {
+    &__pReminder {
+        color: #87AACD;
+    }
+    &__lastUpdate {
+        margin: 0;
+        font-size: 14px;
+        display: inline-block;
+        line-height: 16px;
+        margin-right: 15px;
+    }
+    &__sepLine {
+        height: 80%;
+        width: 2px;
+        border-radius: 50%;
+        background-color: #808080;
+        margin-left: 20px;
+        margin-right: 20px
+    }
+    &__section {
+        width: auto;
+        border: solid #808080 2px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    &__container {
+        height: 40px;
+        width: fit-contt;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__upload {
+        width: 180px;
+        margin-left: 15px;
+    }
+}

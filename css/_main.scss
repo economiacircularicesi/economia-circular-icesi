@@ -1,0 +1,362 @@
+body {
+    height: 800;
+    font-family: $font-stack;
+    margin: 0px;
+    line-height: 1.5;
+}
+
+main {
+    height: 85%;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main {
+    &__tool {
+        display: flex;
+        padding-bottom: 0px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        height: 750px;
+    }
+}
+
+.div__forgot {
+    height: 100%;
+}
+
+.forgot__logo {
+    width: 169px;
+    height: 153px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 15%;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+h4 {
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #646464;
+}
+
+a {
+    color: #449BD5;
+    text-decoration: none;
+}
+
+.login__text--forgot {
+    margin: 0px;
+}
+
+.login__text--forgottitle {
+    margin-top: 15px;
+}
+
+.div {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.div--left {
+    padding-right: 0px;
+}
+
+.text__logo {
+    width: 471px;
+    height: 114px;
+}
+
+.login {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 7px rgb(230, 230, 230);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__text {
+        &--sidemargin {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+}
+
+.login--forgot {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.login__input {
+    width: 320px;
+    height: 45px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: solid #666666 1px;
+    font-size: 17px;
+    padding-left: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    outline: none;
+}
+
+.login__text {
+    font-size: 12px;
+    text-align: center;
+}
+
+.text__text {
+    color: #5E5E60;
+}
+
+.login__sepline {
+    height: 3px;
+    background-color: #F0F2F5;
+    width: 100%;
+}
+
+.text__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.text--list {
+    margin: 0;
+}
+
+.square {
+    height: 10px;
+    width: 10px;
+    background-color: #F3C546;
+    align-self: flex-start;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+.square--blue {
+    background-color: #4796CF;
+}
+
+.square--green {
+    background-color: #07A239;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #ffffff;
+    padding: 16px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 33%;
+    padding: 0 15px;
+    padding-left: 80px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: px;
+}
+
+.footer-col ul li a {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #646464;
+    text-decoration: none;
+    font-weight: 300;
+    color: #646464;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #90949B;
+    opacity: 1;
+    /* Firefox */
+    font-family: Lato, sans-serif;
+}
+
+footer-col h4 {
+    font-size: 16px;
+    color: #646464;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-weight: 500;
+    position: relative;
+    margin-top: 13px;
+}
+
+.footer_data {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #646464;
+    text-decoration: none;
+    font-weight: 300;
+    color: #646464;
+    display: block;
+    transition: all 0.3s ease;
+    padding-left: 0px;
+}
+
+.footer__logo {
+    width: 224px;
+    height: 96px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.login__name {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+}
+
+.login__input--name {
+    width: 155px;
+    margin-right: 0px;
+    margin-left: 33px;
+}
+
+.login__input--lastname {
+    margin-right: 33px;
+    margin-left: 10px;
+}
+
+@media(max-width: 931px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    main {
+        flex-direction: column;
+    }
+    .div {
+        padding: 20px;
+        width: 100%;
+    }
+    .login {
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .text__logo {
+        margin-top: 20px;
+        width: 300px;
+        height: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .text__description {
+        padding: 20px;
+    }
+    .div--responsive {
+        padding-bottom: 0px;
+        margin-bottom: 50px;
+    }
+    .login {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 400px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    main {
+        flex-direction: column;
+    }
+    .div {
+        padding: 20px;
+        width: 100%;
+    }
+    .login {
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .button {
+        width: 80%;
+    }
+    .login__input {
+        width: 80%;
+    }
+    .text__logo {
+        margin-top: 20px;
+        width: 280px;
+        height: 67px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .forgot__logo {
+        margin-top: 20px;
+        width: 120px;
+        height: 108px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .div--responsive {
+        padding-bottom: 0px;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}

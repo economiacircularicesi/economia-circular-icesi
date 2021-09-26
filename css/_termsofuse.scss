@@ -1,0 +1,45 @@
+.termscard {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    &__index {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    &__text {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 50px;
+        &__title {
+            text-align: left;
+            margin-top: 50px;
+            font-size: 24px;
+        }
+        &--justify {
+            text-align: justify;
+        }
+        height: fit-content;
+    }
+}
+
+.sepline {
+    &__vertical {
+        width: 2px;
+        background-color: #F0F2F5;
+    }
+}

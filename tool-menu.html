@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Herramienta</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__leftitem">
+            <img class="header__sectionlogo" src="images/tools_logo.png">
+        </div>
+        <div class="header__rightitem">
+            <p class="header__user loggedUser"></p>
+            <a id="logout" class="header__link">Log out</a>
+            <img class="header__userlogo" src="images/user_icon.png">
+        </div>
+    </header>
+    <main class="menuTool">
+        <section class="column column__left">
+            <div class="card">
+                <header class="card__header">
+                    <div class="card__sep card__sep--one">
+
+                    </div>
+                    <div class="card__sep card__sep--two">
+
+                    </div>
+                    <div class="card__sep card__sep--three">
+
+                    </div>
+                    <img class="card__picture card__picture__tool" src="images/user_icon.png">
+                </header>
+                <p class="text text__subheading userName">Cargando...</p>
+                <p class="text text__cuerpo userEmail">Cargando...</p>
+                <p class="text text__cuerpo text--margindown userCompany">Cargando...</p>
+            </div>
+
+        </section>
+        <section class="column column__right">
+            <div class="column column__option">
+                <div class="menuCard pdfButton">
+                    <img src="./images/pdf.png" class="menuImage">
+                    <h1>GUÍA DEL USUARIO</h1>
+
+
+                </div>
+                <div class="menuCard pressed noHover">
+                    <img src="./images/report.png" class="menuImage ">
+                    <h1>INFORME DE SU EMPRESA</h1>
+
+                </div>
+            </div>
+            <div class="column column__option">
+                <div class="menuCard questionaryButton">
+                    <img src="./images/questionary.png" class="menuImage menuImage__questionary">
+                    <h1>CUESTIONARIO</h1>
+
+                </div>
+                <div class="menuCard pressed noHover">
+                    <img src="./images/benchmarking.png" class="menuImage">
+                    <h1>BENCHMARKING</h1>
+
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+</body>
+<footer class=" footer ">
+    <div class="container ">
+        <div class="row ">
+            <div class="footer-col ">
+                <img class="footer__logo " src="images/logo_icesi.png " id="logoIcesi ">
+            </div>
+            <div class="footer-col ">
+                <h4>Contacto</h4>
+                <ul>
+                    <li class="footer_data "><a href="https://www.icesi.edu.co/es/ ">Universidad Icesi</a></li>
+                    <li class="footer_data ">Calle 18 No. 122-135 Pance, Cali - Colombia</li>
+                    <li class="footer_data ">Teléfono: +57 (2) 555 2334</li>
+                </ul>
+            </div>
+            <div class="footer-col ">
+                <h4>Creado por</h4>
+                <ul>
+                    <li class="footer_data ">Katherine Ortegon Mosquera PhD </li>
+                    <li class="footer_data "><em class="email ">kortegon@icesi.edu.co</em></li>
+                    <li class="footer_data ">Maria Del Pilar Acosta Collazos PhD</li>
+                    <li class="footer_data "><em class="email ">mdacosta@icesi.edu.co</em></li>
+                </ul>
+            </div>
+        </div>
+</footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyADSAber7xTHyD99G7Z1hlOpxJNKris1lM",
+        authDomain: "economia-circular-icesi.firebaseapp.com",
+        databaseURL: "https://economia-circular-icesi-default-rtdb.firebaseio.com",
+        projectId: "economia-circular-icesi",
+        storageBucket: "economia-circular-icesi.appspot.com",
+        messagingSenderId: "1060392061768",
+        appId: "1:1060392061768:web:7515a7dc4fecc5dd02c17d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("user_3jiLvmDOS3v8RaYQXdolp");
+    })();
+</script>
+<script src="./js/utils/auth.js "></script>
+<script src="./js/toolMenu.js"></script>
+
+
+</html>

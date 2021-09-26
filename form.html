@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economía Circular Icesi</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__leftitem">
+            <img class="header__sectionlogo" src="images/tools_logo.png">
+        </div>
+
+        <div class="header__rightitem">
+            <p class="header__user loggedUser"></p>
+            <a id="logout" class="header__link">Log out</a>
+            <img class="header__userlogo" src="images/user_icon.png">
+        </div>
+    </header>
+    <main class="main dataform--main">
+        <div class="dataform__column">
+            <div class="dataform__title"><strong>Editar Formulario</strong></div>
+            <a href="./admin.html">
+                <button class="button form__button form__button--fixed">Volver</button>
+            </a>
+        </div>
+
+        <div class="dataform__content">
+            <section class="dataform__questions">
+                <section class="matrix__section">
+                    <label class="matrixName">Matriz relación actividades y principios</label>
+                    <div class="matrix__container">
+                        <input accept=".csv, .txt" type="file" class="matrix__upload file">
+                        <div class="matrix__sepLine"></div>
+                        <button class="downloadMatrixBtn">Descargar</button>
+                        <div class="matrix__sepLine"></div>
+                        <p class="matrix__lastUpdate lastUpdate">Ultima actualización<br>17/23/32</p>
+                    </div>
+                </section>
+
+
+                <select class="dataform dataform__select dataform__sublevels preview_activity">
+                    <option value="none">Seleccionar una actividad</option>
+                    <option value="A1">A1 Desarrollo o implementación de tecnologías que impulsan la EC</option>
+                    <option value="A2">A2 Mantener el equilibrio ecosistémico en las zonas de operación de la organización</option>
+                    <option value="A3">A3 Devolver los recursos biológicos recuperados a la biosfera</option>
+                    <option value="A4">A4 Energías no convencionales</option>
+                    <option value="A5">A5 Alianzas para el desarrollo de la EC con organizaciones y grupos de interés</option>
+                    <option value="A6">A6 Remanufacturar productos o componentes</option>
+                    <option value="A7">A7 Gestionar(administrar, coordinar, organizar, evaluar) para la mitigación de impacto</option>
+                    <option value="A8">A8 Educar a los actores de la cadena e interesados sobre la EC</option>
+                    <option value="A9">A9 Diseño para la prolongación de la vida útil (Ecodiseño o DfE)</option>
+                    <option value="A10">A10 Economía Colaborativa (Productor - Productor, Consumidor - consumidor)</option>
+                    <option value="A11">A11 Producto como servicio (PSS)</option>
+                    <option value="A12">A12 Recuperación y re circulación de materiales. ( reciclaje de insumos, materias primas y residuos)</option>
+                </select>
+
+                <article class="dataform dataform__preview">
+                    <div class="dataform__label label">Seleccione una actividad para cargar las preguntas asociadas.</div>
+                    <div class="dataform__questionsContainer">
+
+                    </div>
+
+                </article>
+
+            </section>
+            <section class="dataform__edit">
+                <div class="dataform__typeContainer">
+                    <div class="dataform__subtitlecard dataform dataform__typeContainer--option left">
+                        Agregar Pregunta
+                    </div>
+                    <div class="dataform__subtitlecard dataform dataform__typeContainer--option dataform__typeContainer--right pressed right">
+                        Asociar Pregunta
+                    </div>
+                </div>
+
+                <article class="dataform dataform__form newQuestion">
+                    <p class="dataform__text text">Por favor complete todos los campos a continuación para agregar una pregunta a la base de datos<br><br></p>
+
+                    <p class="dataform__text text">1. Seleccione una actividad para esta pregunta:</p>
+                    <div class="dataform__activities text">
+
+                        <label><input name="activity" type="radio" value="A1" class="activity dataform__activity"> <strong>(A1)</strong> Desarrollo o implementación de tecnologías que impulsan la EC<div class="a1Principles  hidden matrix__pReminder"></div></label>
+                        <label><input name="activity" type="radio" value="A2" class="activity dataform__activity"> <strong>(A2)</strong> Mantener el equilibrio ecosistémico en las zonas de operación de la organización<div class="a2Principles  hidden matrix__pReminder"></div></label>
+                        <label><input name="activity" type="radio" value="A3" class="activity dataform__activity"> <strong>(A3)</strong> Devolver los recursos biológicos recuperados a la biosfera<div class="a3Principles  hidden matrix__pReminder"></div></label>
+                        <label><input name="activity" type="radio" value="A4" class="activity dataform__activity"> <strong>(A4)</strong> Energías no convencionales<div class="a4Principles  hidden matrix__pReminder"></div></label>
+                        <label><input name="activity" type="radio" value="A5" class="activity dataform__activity"> <strong>(A5)</strong> Alianzas para el desarrollo de la EC con organizaciones y grupos de interés<div class="a5Principles  hidden matrix__pReminder"></div></label>
+                        <label><input name="activity" type="radio" value="A6" class="activity dataform__activity"> <strong>(A6)</strong> Remanufacturar productos o componentes<div class="a6Principles  hidden matrix__pReminder"></div></label>
+                        <label><input name="activity" type="radio" value="A7" class="activity dataform__activity"> <strong>(A7)</strong> Gestionar(administrar, coordinar, organizar, evaluar) para la mitigación de impacto<div class="a7Principles  hidden matrix__pReminder"></div></label>
+                        <label><input name="activity" type="radio" value="A8" class="activity dataform__activity"> <strong>(A8)</strong> Educar a los actores de la cadena e interesados sobre la EC<div class="a8Principles  hidden matrix__pReminder"></div></label>
+                        <label><input name="activity" type="radio" value="A9" class="activity dataform__activity"> <strong>(A9)</strong> Diseño para la prolongación de la vida útil (Ecodiseño o DfE)<div class="a9Principles  hidden matrix__pReminder"></div></label>
+                        <label><input name="activity" type="radio" value="A10" class="activity dataform__activity"> <strong>(A10)</strong> Economía Colaborativa (Productor - Productor, Consumidor - consumidor)<div class="a10Principles  hidden matrix__pReminder"></div></label>
+                        <label><input name="activity" type="radio" value="A11" class="activity dataform__activity"> <strong>(A11)</strong> Producto como servicio (PSS)<div class="a11Principles  hidden matrix__pReminder"></div></label>
+                        <label><input name="activity" type="radio" value="A12" class="activity dataform__activity"> <strong>(A12)</strong> Recuperación y re circulación de materiales. ( reciclaje de insumos, materias primas y residuos)<div class="a12Principles  hidden matrix__pReminder"></div></label>
+
+                    </div>
+                    <div class="dataform__row dataform__row--top">
+                        <p class="text dataform__row--text">2. Seleccionar tipo:</p>
+                        <select class="dataform__select--inner kindofquestionType">
+                                <option value="no_type">Seleccionar un tipo</option>
+                            <option value="multiple_choice">Opción Múltiple</option>
+                            <option value="multiple_choice_single_answer">Única respuesta</option>
+                                <option value="multiple_choice_scale">Escala</option>
+                        </select>
+                    </div>
+                    <div class="dataform__row dataform__row--column">
+                        <p class="text dataform__row--text">3. Enunciado:</p>
+                        <textarea class="dataform__textarea question_statment"></textarea>
+                    </div>
+                    <p class="dataform__text text">4. Agregue las opciones de posible respuesta de la pregunta:</p>
+                    <div class="dataform__row dataform__row--column optionscontainer">
+
+                    </div>
+                    <div class="dataform__row">
+                        <p class="text dataform__row--text">5. Añadir justificación abierta:</p>
+                        <div class="dataform__row dataform__row--radiobutton">
+                            <input type="radio" id="yes" name="justify" value=true>
+                            <label for="yes">Si</label><br>
+                            <input type="radio" id="no" name="justify" value=false>
+                            <label for="no">No</label><br>
+                        </div>
+                    </div>
+                    <div class="dataform__row dataform__row--column">
+                        <div class="dataform__innerRow">
+                            <p class="text dataform__row--text">6. Añadir pista:</p>
+                            <div class="dataform__row dataform__row--radiobutton">
+                                <input type="radio" id="yesJustify" name="hint" value=true class="addHint">
+                                <label for="yesJustify">Si</label><br>
+                                <input type="radio" id="noJustify" name="hint" value=false class="removeHint">
+                                <label for="noJustify">No</label><br>
+                            </div>
+                        </div>
+                        <textarea class="dataform__textarea questionHint hidden"></textarea>
+                    </div>
+                    <p class="dataform__error"></p>
+                    <button class="button dataform__button add_question">
+                        Agregar
+                    </button>
+
+                </article>
+                <article class="dataform dataform__form associateQuestion hidden">
+                    <p class="dataform__text text">Por favor ingrese el identificador de la pregunta a la cual desea asociar esta nueva pregunta:</p>
+                    <div class="dataform__row dataform__row--top">
+                        <p class="text dataform__row--text">Id:</p>
+                        <input class="form__option--input dataform__select--inner dataform__input id" placeholder="Copie aquí el id de la pregunta principal." readonly>
+                        <button class="button--red button button--accept dataform__clearBtn clearBtn">Quitar</button>
+                    </div>
+                    <div class="dataform__row dataform__row--top assQstnError hidden">
+                        <p class="dataform__error dataform__error--assQstn">Esta pregunta no existe</p>
+                    </div>
+                    <div class="dataform__row dataform__row--column dataform__row--top renderAssQstn hidden">
+                        <p><strong>Paso 1: </strong>Verifica tu pregunta padre y selecciona opción para asociar:</p>
+                        <p class="dataform__assQstn--statment text"></p>
+                        <!--  <p><strong>Paso 2: </strong>Selecciona y añade la pregunta a asociar</p>-->
+                        <div class="dataform__assQstn--options">
+
+                        </div>
+                    </div>
+                    <p class="text dataform__error sameIdsError hidden">Los identificadores deben ser diferentes.</p>
+                    <div class="dataform__row dataform__row--top hidden id2div">
+                        <p class="text dataform__row--text">Id:</p>
+                        <input class="form__option--input dataform__select--inner dataform__input id2" placeholder="Copie aquí el id de la pregunta hijo.">
+                    </div>
+                    <button class="button dataform__button hidden associate">Asociar</button>
+
+
+                </article>
+
+            </section>
+
+            </section>
+
+        </div>
+
+
+    </main>
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="footer-col ">
+                    <img class="footer__logo" src="images/logo_icesi.png " id="logoIcesi ">
+                </div>
+                <div class="footer-col ">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li class="footer_data "><a href="https://www.icesi.edu.co/es/ ">Universidad Icesi</a></li>
+                        <li class="footer_data ">Calle 18 No. 122-135 Pance, Cali - Colombia</li>
+                        <li class="footer_data ">Teléfono: +57 (2) 555 2334</li>
+                    </ul>
+                </div>
+                <div class="footer-col ">
+                    <h4>Creado por</h4>
+                    <ul>
+                        <li class="footer_data ">Katherine Ortegon Mosquera PhD </li>
+                        <li class="footer_data "><em class="email ">kortegon@icesi.edu.co</em></li>
+                        <li class="footer_data ">Maria Del Pilar Acosta Collazos PhD</li>
+                        <li class="footer_data "><em class="email ">mdacosta@icesi.edu.co</em></li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
+
+
+</html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyADSAber7xTHyD99G7Z1hlOpxJNKris1lM",
+        authDomain: "economia-circular-icesi.firebaseapp.com",
+        databaseURL: "https://economia-circular-icesi-default-rtdb.firebaseio.com",
+        projectId: "economia-circular-icesi",
+        storageBucket: "economia-circular-icesi.appspot.com",
+        messagingSenderId: "1060392061768",
+        appId: "1:1060392061768:web:7515a7dc4fecc5dd02c17d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/utils/auth.js"></script>
+<script src="js/utils/general.js"></script>
+<script src="js/form.js "></script>
+<script src="js/utils/filters.js"></script>
+<script src="js/utils/matrix.js"></script>

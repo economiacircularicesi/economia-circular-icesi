@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Herramienta</title>
+</head>
+
+<body>
+    <section class="modal">
+        <div class="modal__backdrop">
+            <div class="modal__container">
+                <article class="modal__content">
+                    <p class="modal__text text__text">Declaro que tengo autorización expresa por parte de la persona jurídica en la que laboro, para brindar la información que sea requerida en esta plataforma, con el conocimiento de que los resultados que se obtengan serán utilizados
+                        con finalidades académicas y de investigación.</p>
+                    <div class="modal__container">
+                        <button id="backBtn" class="button button--accept  modal__button modal__button--cancel">Volver</button>
+                        <button id="acceptBtn" class="button button--accept  modal__button">Aceptar</button>
+                    </div>
+                </article>
+            </div>
+    </section>
+    <header class="header">
+        <div class="header__leftitem">
+            <img class="header__sectionlogo" src="images/tools_logo.png">
+        </div>
+
+        <div class="header__rightitem">
+            <p class="header__user loggedUser"></p>
+            <a id="logout" class="header__link">Log out</a>
+            <img class="header__userlogo" src="images/user_icon.png">
+        </div>
+    </header>
+    <main class="main main__tool">
+        <div class="card__big">
+            <div class="card__image">
+
+            </div>
+            <div class="card__info">
+                <img class="tool__logo" src="images/logo_regular.png">
+                <p class="text__text text--center text--justify">El propósito de esta herramienta es permitirle a las empresas colombianas evolucionar hacia la economía circular. Esta herramienta tiene como objetivo que las empresas puedan autoevaluar su estado actual con respecto a las principios de
+                    economía circular en tres niveles: <strong>Cadena de suministro, Empresas y Producto considerando las prácticas y actividades propias del modelo de economía circular</strong>. Adicional a su estado actual, las empresas conocer su <strong>posición
+                    en el ranking nacional, podrán realizar un benchmarking con respecto a empresas similares de su sector</strong> y podrán obtener su <strong>hoja de ruta</strong> que les permitirá evolucionar hacia un modelo de negocio circular.</p>
+                <button id="start__tool" class="button button__start__tool">Comenzar</button>
+            </div>
+        </div>
+        <article class="form">
+            <div class="form__section">
+
+            </div>
+
+        </article>
+    </main>
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="footer-col ">
+                    <img class="footer__logo" src="images/logo_icesi.png " id="logoIcesi ">
+                </div>
+                <div class="footer-col ">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li class="footer_data "><a href="https://www.icesi.edu.co/es/ ">Universidad Icesi</a></li>
+                        <li class="footer_data ">Calle 18 No. 122-135 Pance, Cali - Colombia</li>
+                        <li class="footer_data ">Teléfono: +57 (2) 555 2334</li>
+                    </ul>
+                </div>
+                <div class="footer-col ">
+                    <h4>Creado por</h4>
+                    <ul>
+                        <li class="footer_data ">Katherine Ortegon Mosquera PhD </li>
+                        <li class="footer_data "><em class="email ">kortegon@icesi.edu.co</em></li>
+                        <li class="footer_data ">Maria Del Pilar Acosta Collazos PhD</li>
+                        <li class="footer_data "><em class="email ">mdacosta@icesi.edu.co</em></li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+
+
+</body>
+
+</html>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyADSAber7xTHyD99G7Z1hlOpxJNKris1lM",
+        authDomain: "economia-circular-icesi.firebaseapp.com",
+        databaseURL: "https://economia-circular-icesi-default-rtdb.firebaseio.com",
+        projectId: "economia-circular-icesi",
+        storageBucket: "economia-circular-icesi.appspot.com",
+        messagingSenderId: "1060392061768",
+        appId: "1:1060392061768:web:7515a7dc4fecc5dd02c17d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/utils/auth.js"></script>
+<script src="js/tool.js"></script>
